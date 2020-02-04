@@ -1,1 +1,3 @@
-# RamsomwareNodeJs
+# RansomwareNodeJs
+
+criptografia pkcs1

@@ -1,0 +1,12 @@
+{
+  "name": "RansomwareNodeJs",
+  "version": "1.0.0",
+  "description": "Meu primeiro virus em js",
+  "main": "index.js",
+  "author": "Daniel Dormin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "uniqid": "^5.2.0"
+  }
+}
