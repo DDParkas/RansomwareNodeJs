@@ -30,11 +30,11 @@ class EncryptionManager{
         })
     }
 
-    saveSimetricKey(simetricKey){
+    saveSymetricKey(symetricKey){
         var encryptedKey
         if(this.cipher){
-            simetricKey =Buffer.from(simetricKey, 'utf-8')
-            encryptedKey = crypto.publicEncrypt(this.cipher, simetricKey)
+            symetricKey =Buffer.from(symetricKey, 'utf-8')
+            encryptedKey = crypto.publicEncrypt(this.cipher, symetricKey)
             this.saveKey(encryptedKey, symetricKeyPath)
             return
         }else{
