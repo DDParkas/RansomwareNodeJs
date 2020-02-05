@@ -30,7 +30,7 @@ class MachineManager{
             return null
         }
         var systemInfo = JSON.parse(fs.readFileSync(sysInfoPath))
-        if(typeof sysInfoPath != 'object'){
+        if(typeof systemInfo != 'object'){
             return null
         }
         return systemInfo
