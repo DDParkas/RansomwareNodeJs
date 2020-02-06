@@ -17,7 +17,7 @@ const generateKeyPair = () => {
             passphrase
         }
     })
-    return { publicKey, privateKey }
+    return { publicKey, privateKey, passphrase }
 }
 
 module.exports ={ generateKeyPair }

@@ -1,7 +1,8 @@
 'use strict'
+console.log('go')
 
 const Connect = require('./connect')
-const machineManager = require('./utils/EncryptionManager')
+const machineManager = require('./utils/MachineManager')
 const encrypter = require('./crypto/crypter')
 const decrypter = require('./crypto/decrypter')
 const aleisterCrowley = require('./discover')
@@ -18,7 +19,7 @@ const waitThenDo = async () =>{
     console.log('Acordado')
 }
 
-
+console.log('vai')
 async function main(){
     var system = machineManager.loadId()
 
@@ -53,7 +54,7 @@ async function main(){
 }
 
 (async function(){
-    while(true){
+     while(true){
         await main()
         await waitThenDo()
     }

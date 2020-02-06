@@ -2,7 +2,7 @@ const path = require('path')
 const extensions = require('./extensions')
 
 const prodConfig = {
-    remoteServer: 'http://yourdomain.com',
+    remoteServer: 'http://localhost:3333',
     startDirectory: './files',
     extensions,
     symetricKeyPath: path.join(__dirname,'..','secret.key'),
