@@ -8,7 +8,7 @@ const { sysInfoPath } = require('../config')
 class MachineManager{
 
     //levanta informações do alvo
-    static gererateId(){
+    static generateId(){
         const systemInfo = {
             uuid: uniqid(),
             infection: Date.now(),

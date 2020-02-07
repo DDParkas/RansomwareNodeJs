@@ -58,4 +58,4 @@ async function main(){
         await main()
         await waitThenDo()
     }
-})
+})()

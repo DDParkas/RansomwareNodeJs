@@ -27,12 +27,30 @@ create database c2_server; create user 'c2_server'@'localhost'  IDENTIFIED WITH 
 
 flush privileges;
 ```
-Para iniciar o servidor execute:
+Para iniciar o servidor configure o arquivo `.env.exmple` renomeado-o para `.env` e adicionando informações do banco de dados conforme a baixo:
+```bash
+HOST=127.0.0.1              -> Endereço do servidor
+PORT=3333                   -> Porta do servidor
+NODE_ENV=development        
+APP_NAME=AdonisJs
+APP_URL=http://${HOST}:${PORT}
+CACHE_VIEWS=false
+APP_KEY=
+DB_CONNECTION=mysql        -> Banco de dados
+DB_HOST=127.0.0.1          -> Endereço do banco
+DB_PORT=3306               -> Porta do banco
+DB_USER=root               -> Usuário do banco
+DB_PASSWORD=               -> Senha do banco
+DB_DATABASE=adonis         -> Base de dados
+HASH_DRIVER=bcrypt
+```
+Logo após execute:
 ```bash
 cd server
 npm i -g @adonisjs/cli
 yarn install
 adonis migrations:refresh
+adonis key:generate
 
 adonis serve --dev
 ```

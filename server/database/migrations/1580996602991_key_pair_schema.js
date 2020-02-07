@@ -13,7 +13,7 @@ class KeyPairSchema extends Schema {
       table.integer('client_id').unsigned()
       table.timestamps()
 
-      table.foreing('client_id').references('id').inTable('clients')
+      table.foreign('client_id').references('id').inTable('clients')
     })
   }
 
