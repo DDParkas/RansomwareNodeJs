@@ -10,7 +10,7 @@
     <a aria-label="Versão do MySql" href="https://www.mysql.com/">
     <img src="https://img.shields.io/badge/MySql-5.7.26-informational?logo=mysql"></img>
   <a aria-label="Concluindo em " href="#">
-    <img src="https://img.shields.io/badge/Dias-4-green"></img>
+    <img src="https://img.shields.io/badge/Dias-7-blueviolet"></img>
   </a>
 </p>
 
@@ -49,7 +49,7 @@ Logo após execute:
 cd server
 npm i -g @adonisjs/cli
 yarn install
-adonis migrations:refresh
+adonis migration:refresh
 adonis key:generate
 
 adonis serve --dev
