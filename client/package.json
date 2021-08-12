@@ -6,7 +6,7 @@
   "author": "Daniel Dormin",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "nexe": "^3.2.0",
     "uniqid": "^5.2.0"
   }
